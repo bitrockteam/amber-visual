@@ -1,6 +1,5 @@
 
-import './styles/main.css';
-import './libs/app';
+import './index.scss';
 
 console.log('Project started...');
 
@@ -14,4 +13,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-document.querySelector('.js-warning').style.display = 'none';
+
+const warn = document.querySelector('.js-warning');
+warn ? warn.style.display = 'none' : null;
