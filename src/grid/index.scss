@@ -1,3 +1,11 @@
-h2 {
-  color: green;
+.grid-1 {
+  grid-column: span 12;
+}
+
+.grid-2 {
+  grid-column: span 6;
+}
+
+.grid-3 {
+  grid-column: span 4;
 }
