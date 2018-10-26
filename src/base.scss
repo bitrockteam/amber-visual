@@ -27,15 +27,8 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 32px;
-
+    grid-gap: 1rem;
 }
-
-.grid-3 {
-    grid-column: span 4;
-}
-
-
 
 .grid-card {
     text-align: center;

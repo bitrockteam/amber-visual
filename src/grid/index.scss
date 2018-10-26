@@ -1,3 +1,7 @@
+.wrapper-fluid {
+  max-width: none;
+}
+
 .grid-1 {
   grid-column: span 12;
 }
@@ -8,4 +12,16 @@
 
 .grid-3 {
   grid-column: span 4;
+}
+
+.grid-4 {
+  grid-column: span 3;
+}
+
+.grid-6 {
+  grid-column: span 2;
+}
+
+.grid-12 {
+  grid-column: span 1;
 }
