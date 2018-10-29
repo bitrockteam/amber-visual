@@ -3,254 +3,245 @@
 // Setup
 
 html {
-    font-family: sans-serif;
-    font-size: 100%; // 100% = 16px = 1rem
-    -webkit-font-smoothing: antialiased;
+  font-family: sans-serif;
+  font-size: 100%; // 100% = 16px = 1rem
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $text--sans-serif;
+  font-size: 1rem; // 16px
+  line-height: 1.5rem; // 24px
+  font-weight: normal;
+  color: $grey-darker;
+}
+
+// Text
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+small {
+  font-size: .75rem; // 12px
+}
+
+a {
+  color: $orange-dark;
+  text-decoration: none;
+    
+  &:focus, &:hover {
+    color: $orange-darker;
+    text-decoration: underline;
   }
-  
-  body {
-    font-family: $text--sans-serif;
-    font-size: 1rem; // 16px
-    line-height: 1.5rem; // 24px = 16px + 8px = 1rem + 0.5rem
-    font-weight: normal;
-    color: $grey-darker;
-  }
-  
-  // Text
-  
-  p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
-  
-  small {
-    font-size: .75rem; // 12px
-  }
-  
-  a {
-    color: $orange-dark;
-    text-decoration: none;
-      
-    &:focus, &:hover {
-      color: $orange-darker;
-      text-decoration: underline;
-    }
-  }
-  
-  blockquote {
-    margin-top: 0;
-    margin-bottom: 1rem;
-  
-    border-left: 4px solid $orange-dark;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 1rem 1.5rem; // 16px 24px
-  
-    & *:last-child {
-      margin-bottom: 0;
-    }
-  }
-  
-  // Headings
-  
-  h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 1rem; // 16px
-    color: $grey-darker;
-  }
-  
-  .text-d1 {
-    font-size: 3.5rem; // 56px
-    line-height: 4rem; // 64px = 56px + 8px = 3.5rem + 0.5rem
-    font-weight: bold;
-  }
-  
-  .text-d2 {
-    font-size: 3rem; // 48px
-    line-height: 3.5rem; // 56px = 48px + 8px = 3rem + 0.5rem
-    font-weight: bold;
-  }
-  
-  .text-d3 {
-    font-size: 2.5rem; // 40px
-    line-height: 3rem; // 48px = 40px + 8px = 2.5rem + 0.5rem
-    font-weight: bold;
-  }
-  
-  h1, .text-h1 {
-    font-size: 2rem; // 32px
-    line-height: 2.5rem; // 40px = 32px + 8px = 2rem + 0.5rem
-    font-weight: bold;
-  }
-  
-  h2, .text-h2 {
-    font-size: 1.75rem; // 28px
-    line-height: 2.25rem; // 36px = 28px + 8px = 1.75rem + 0.5rem
-    font-weight: bold;
-  }
-  
-  h3, .text-h3 {
-    font-size: 1.5rem; // 24px
-    line-height: 2rem; // 32px = 24px + 8px= 1.5rem + 0.5rem
-    font-weight: bold;
-  }
-  
-  h4, .text-h4 {
-    font-size: 1.25rem; // 20px
-    line-height: 1.75rem; // 28px = 20px + 8px = 1.25rem + 0.5rem
-    font-weight: bold;
-  }
-  
-  h5, .text-h5 {
-    font-size: 1rem; // 16px
-    line-height: 1.5rem; // 24px = 16px + 8px = 1rem + 0.5rem
-    font-weight: bold;
-  }
-  
-  h6, .text-h6 {
-    font-size: .875rem; // 14px
-    line-height: 1.375rem; // 22px = 14px + 8px = 0.875rem + 0.5rem
-    font-weight: bold;
-  }
-  
-  // Code
-  
-  code, pre {
-    font-family: $text--monospace;
-    font-size: .875rem; // 14px
-  }
-  
-  code {
-    background: $grey-lighter;
-    border-radius: .25rem; // 4px
-    padding: .125rem .25rem; // 2px 4px
-    white-space: nowrap;
-  }
-  
-  pre {
-    margin-top: 0;
-    margin-bottom: 1rem;
-  
-    background: $grey-lighter;
-    display: block;
-    line-height: 1.25rem; // 20px = 12px + 8px = 0.75rem + 0.5rem
-    padding: 1rem 1.5rem; // 16px 24px
-  
-    code {
-      background: transparent;
-      padding: 0;
-      white-space: pre;
-    }
-  }
-  
-  // Lists
-  
-  ul, ol, dl {
-    margin-top: 0;
-    margin-bottom: 1rem; // 16px
-    padding-left: 0;
-  }
-  
-  ul {
-    list-style: disc inside;
-  }
-  
-  ol {
-    list-style: decimal inside;
-  }
-  
-  ul dl, ul ol, ul ul,
-  ol dl, ol ol, ol ul {
-    margin-top: 0;
+}
+
+blockquote {
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  border-left: 4px solid $orange-dark;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem 1.5rem; // 16px 24px
+
+  & *:last-child {
     margin-bottom: 0;
   }
+}
+
+// Headings
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1rem; // 16px
+  color: $grey-darker;
+  font-weight: bold;
+}
+
+.text-d1 {
+  font-size: 3rem; // 48px
+  line-height: 3.5rem; // 56px
+}
+
+.text-d2 {
+  font-size: 2.5rem; // 40px
+  line-height: 3rem; // 48px
+}
+
+.text-d3 {
+  font-size: 2rem; // 32px
+  line-height: 2.5rem; // 40px
+}
+
+h1, .text-h1 {
+  font-size: 1.75rem; // 28px
+  line-height: 2.25rem; // 36px
+}
+
+h2, .text-h2 {
+  font-size: 1.5rem; // 24px
+  line-height: 2rem; // 32px
+}
+
+h3, .text-h3 {
+  font-size: 1.25rem; // 20px
+  line-height: 1.75rem; // 28px
+}
+
+h4, .text-h4 {
+  font-size: 1.125rem; // 18px
+  line-height: 1.75rem; // 28px
+}
+
+h5, .text-h5 {
+  font-size: 1rem; // 16px
+  line-height: 1.5rem; // 24px
+}
+
+h6, .text-h6 {
+  font-size: .875rem; // 14px
+  line-height: 1.25rem; // 20px
+}
+
+// Code
+
+code, pre {
+  font-family: $text--monospace;
+  font-size: .875rem; // 14px
+}
+
+code {
+  background: $grey-lighter;
+  border-radius: .25rem; // 4px
+  padding: .125rem .25rem; // 2px 4px
+  white-space: nowrap;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  background: $grey-lighter;
+  display: block;
+  padding: 1rem 1.5rem; // 16px 24px
+
+  code {
+    background: transparent;
+    padding: 0;
+    white-space: pre;
+  }
+}
+
+// Lists
+
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem; // 16px
+  padding-left: 0;
+}
+
+ul {
+  list-style: disc inside;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+ul dl, ul ol, ul ul,
+ol dl, ol ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// Tables
+
+table {
+  margin-top: 0;
+  margin-bottom: 1rem; // 16px
+
+  border-spacing: 0;
+  width: 100%;
+}
+
+td, th {
+  border-bottom: 1px solid $grey-light;
+  padding: 1rem 1.5rem; // 16px 24px
+  text-align: left;
+}
+
+th {
+  font-weight: bolder;
+}
+
+td:first-child,
+th:first-child {
+  padding-left: 0;
+}
+
+td:last-child,
+th:last-child {
+  padding-right: 0;
+}
+
+// Misc
+
+hr {
+  border: 0;
+  margin: 1rem 0; // 16px 0
+  border-top: 1px solid $grey-light;
+}
+
+
+@media (min-width: 768px) {
+
+  // Headings
   
-  // Tables
-  
-  table {
-    margin-top: 0;
-    margin-bottom: 1rem; // 16px
-  
-    border-spacing: 0;
-    width: 100%;
+  .text-d1 {
+    font-size: 5rem; // 80px
+    line-height: 5.5rem; // 88px
+  }
+
+  .text-d2 {
+    font-size: 4rem; // 64px
+    line-height: 4.5rem; // 72px
+  }
+
+  .text-d3 {
+    font-size: 3rem; // 48px
+    line-height: 3.5rem; // 56px
+  }
+
+  h1, .text-h1 {
+    font-size: 2.5rem; // 40px
+    line-height: 3rem; // 48px
+  }
+
+  h2, .text-h2 {
+    font-size: 2rem; // 32px
+    line-height: 2.5rem; // 40px
+  }
+
+  h3, .text-h3 {
+    font-size: 1.5rem; // 24px
+    line-height: 2rem; // 32px
+  }
+
+  h4, .text-h4 {
+    font-size: 1.25rem; // 20px
+    line-height: 1.75rem; // 28px
+  }
+
+  h5, .text-h5 {
+    font-size: 1rem; // 16px
+    line-height: 1.5rem; // 24px
+  }
+
+  h6, .text-h6 {
+    font-size: .875rem; // 14px
+    line-height: 1.25rem; // 20px
   }
   
-  td, th {
-    border-bottom: 1px solid $grey-light;
-    padding: 1rem 1.5rem; // 16px 24px
-    text-align: left;
-  }
-  
-  th {
-    font-weight: bolder;
-  }
-  
-  td:first-child,
-  th:first-child {
-    padding-left: 0;
-  }
-  
-  td:last-child,
-  th:last-child {
-    padding-right: 0;
-  }
-  
-  // Misc
-  
-  hr {
-    border: 0;
-    margin: 1rem 0; // 16px 0
-    border-top: 1px solid $grey-light;
-  }
-  
-  
-  @media (min-width: 768px) {
-  
-    // Headings
-    
-    .text-d1 {
-      font-size: 6rem; // 96px
-      line-height: 6.5rem; // 104px = 96px + 8px = 6rem + 0.5rem
-    }
-  
-    .text-d2 {
-      font-size: 5rem; // 80px
-      line-height: 5.5rem; // 88px = 80px + 8px = 5rem + 0.5rem
-    }
-  
-    .text-d3 {
-      font-size: 4rem; // 64px
-      line-height: 4.5rem; // 72px = 64px + 8px = 4rem + 0.5rem
-    }
-  
-    h1, .text-h1 {
-      font-size: 3rem; // 48px
-      line-height: 3.5rem; // 56px = 48px + 8px = 3rem + 0.5rem
-    }
-  
-    h2, .text-h2 {
-      font-size: 2.5rem; // 40px
-      line-height: 3rem; // 48px = 40px + 8px = 2.5rem + 0.5rem
-    }
-  
-    h3, .text-h3 {
-      font-size: 2rem; // 32px
-      line-height: 2.5rem; // 40px = 32px + 8px = 2rem + 0.5rem
-    }
-  
-    h4, .text-h4 {
-      font-size: 1.5rem; // 24px
-      line-height: 2rem; // 32px = 24px + 8px = 1.5rem + 0.5rem
-    }
-  
-    h5, .text-h5 {
-      font-size: 1.25rem; // 20px
-      line-height: 1.75rem; // 28px = 20px + 8px = 1.25rem + 0.5rem
-    }
-  
-    h6, .text-h6 {
-      font-size: 1rem; // 16px
-      line-height: 1.5rem; // 24px = 16px + 8px = 1rem + 0.5rem
-    }
-    
-  }
+}
