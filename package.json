@@ -6,6 +6,9 @@
   "config": {
     "themeColor": "#e74e0f"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Styleguide & visual assets for the Amber Design System.",
   "repository": "git@github.com:bitrockteam/amber-visual.git",
   "author": "Alessandro Menini <alessandro.menini@bitrock.it>",
