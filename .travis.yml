@@ -4,9 +4,10 @@ node_js:
 
 script: 
   - npm run build
-  - npm run tag 
+  # - npm run tag 
 
 deploy:
+  skip-cleanup: true
   provider: npm
   email: $NPM_USER
   api_key: $NPM_TOKEN
