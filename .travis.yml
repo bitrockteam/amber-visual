@@ -1,3 +1,12 @@
 language: node_js
 node_js:
   - "8.11"
+
+script: 
+  - npm run build
+  - npm run tag 
+
+deploy:
+  provider: npm
+  email: $NPM_USER
+  api_key: $NPM_TOKEN
