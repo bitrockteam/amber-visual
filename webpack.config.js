@@ -48,13 +48,6 @@ const CONFIG = {
   plugins: [
     new FaviconsWebpackPlugin('./src/_assets/logo.png'),
 
-    new HtmlWebpackPlugin({
-      title: pkg.displayName,
-      description: pkg.description,
-      color: pkg.config.themeColor,
-      template: './src/_assets/index.html'
-    }),
-
     new MiniCssExtractPlugin({
       filename: "[name]/index.css",
       chunkFilename: "[id].css"
@@ -114,6 +107,13 @@ const CONFIG = {
   }
 }
 
-CONFIG.plugins = CONFIG.plugins.concat(pages);
+CONFIG.plugins = CONFIG.plugins.concat(pages, [
+  new HtmlWebpackPlugin({
+    title: pkg.displayName,
+    description: pkg.description,
+    color: pkg.config.themeColor,
+    template: './src/_assets/index.html'
+  })
+]);
 
 module.exports = CONFIG;
