@@ -7,34 +7,48 @@
   <title>
     <%= htmlWebpackPlugin.options.title %> / Visual / Grid
   </title>
+
+  <style type="text/css">
+    .grid-card {
+      text-align: center;
+      padding: 1rem;
+      font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    .grid-card-container {
+      padding: 1rem;
+      background-color: #EBEBEB;
+    }
+   </style>
+
 </head>
 <body>
   
   <h1><%= htmlWebpackPlugin.options.title %> / Visual / Grid</h1>
 
-  <div class="wrapper">
+  <div class="container">
     <header>
-      <h3>Max-width wrapper</h3>
+      <h3>Max-width container</h3>
     </header>
     <article class="grid-card-container grid">
       <div class="grid-card grid-1" style="background-color: #F5F5F5">
-        <span>Max-width wrapper</span>
+        <span>Max-width container</span>
       </div>
     </article>
   </div>
 
-  <div class="wrapper-fluid">
+  <div class="container-fluid">
       <header>
-        <h3>Full-width wrapper</h3>
+        <h3>Full-width container</h3>
       </header>
       <article class="grid-card-container grid">
         <div class="grid-card grid-1" style="background-color: #F5F5F5">
-          <span>Full-width wrapper</span>
+          <span>Full-width container</span>
         </div>
       </article>
     </div>
 
-  <div class="wrapper">
+  <div class="container">
 
   <section class="">
     <header>

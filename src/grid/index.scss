@@ -1,5 +1,16 @@
-.wrapper-fluid {
+.container{
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.container-fluid {
   max-width: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
 }
 
 .grid-1 {
