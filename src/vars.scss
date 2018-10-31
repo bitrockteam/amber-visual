@@ -3,6 +3,8 @@
 
 // Colors
 
+/// Orange
+
 $orange-50: #FFF3E1;
 $orange-100: #FEDAB4;
 $orange-200: #FDC187;
@@ -20,6 +22,8 @@ $orange: #EB6400;
 $orange-dark: #BF4C00;
 $orange-darker: #933400;
 
+/// Grey
+
 $grey-50: #F5F5F5;
 $grey-100: #EBEBEB;
 $grey-200: #E0E0E0;
@@ -36,6 +40,34 @@ $grey-light: #E0E0E0;
 $grey: #999999;
 $grey-dark: #5C5C5C;
 $grey-darker: #1F1F1F;
+
+/// Semantic
+
+$info-50: #E1F5FE;  // Material Light Blue 50
+$info-200: #81D4FA; // Material Light Blue 200
+$info-500: #03A9F4; // Material Light Blue 500
+$info-700: #0288D1; // Material Light Blue 700
+$info-900: #01579B; // Material Light Blue 900
+
+$success-50: #E8F5E9;  // Material Green 50
+$success-200: #A5D6A7; // Material Green 200
+$success-500: #4CAF50; // Material Green 500
+$success-700: #388E3C; // Material Green 700
+$success-900: #1B5E20; // Material Green 900
+
+$warning-50: #FFFDE7;  // Material Yellow 50
+$warning-200: #FFF59D; // Material Yellow 200
+$warning-500: #FFEB3B; // Material Yellow 500
+$warning-700: #FBC02D; // Material Yellow 700
+$warning-900: #F57F17; // Material Yellow 900
+
+$error-50: #FFEBEE;  // Material Red 50
+$error-200: #EF9A9A; // Material Red 200
+$error-500: #F44336; // Material Red 500
+$error-700: #D32F2F; // Material Red 700
+$error-900: #B71C1C; // Material Red 900
+
+/// Neutral
 
 $black: #000000;
 $white: #ffffff;
