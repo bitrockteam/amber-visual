@@ -1,0 +1,19 @@
+// Mixins
+
+// Typography
+
+@mixin sans-serif {
+    font-family: $sans-serif;
+    font-size: 1rem; // 16px
+    line-height: 1.5rem; // 24px
+    font-weight: normal;
+    color: $grey-900;
+}
+
+@mixin monospace() {
+    font-family: $monospace;
+    font-size: .875rem; // 14px
+    line-height: 1.5rem; // 24px
+    font-weight: normal;
+    color: $grey-900;
+}

@@ -1,10 +1,10 @@
 {
   "name": "@amber-ds/visual",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "main": "src/index.scss",
   "displayName": "Amber Design System",
   "config": {
-    "themeColor": "#e74e0f"
+    "themeColor": "#EB6400"
   },
   "publishConfig": {
     "access": "public"
