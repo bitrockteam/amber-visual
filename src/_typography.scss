@@ -1,0 +1,196 @@
+@import 'variables';
+@import 'mixins';
+
+
+// Paragraph
+
+p {
+  @include sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+// Headings
+
+h1, h2, h3, h4, h5, h6 {
+  @include sans-serif;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 1.75rem; // 28px
+  line-height: 2.25rem; // 36px
+}
+
+h2 {
+  font-size: 1.5rem; // 24px
+  line-height: 2rem; // 32px
+}
+
+h3 {
+  font-size: 1.25rem; // 20px
+  line-height: 1.75rem; // 28px
+}
+
+h4 {
+  font-size: 1.125rem; // 18px
+  line-height: 1.75rem; // 28px
+}
+
+h5 {
+  font-size: 1rem; // 16px
+  line-height: 1.5rem; // 24px
+}
+
+h6 {
+  font-size: .875rem; // 14px
+  line-height: 1.25rem; // 20px
+}
+
+.display-1 {
+  font-size: 3rem; // 48px
+  line-height: 3.5rem; // 56px
+}
+
+.display-2 {
+  font-size: 2.5rem; // 40px
+  line-height: 3rem; // 48px
+}
+
+.display-3 {
+  font-size: 2rem; // 32px
+  line-height: 2.5rem; // 40px
+}
+
+
+// Links
+
+a {
+  color: $orange-500;
+  text-decoration: none;
+    
+  &:focus, &:hover {
+    color: $orange-700;
+    text-decoration: underline;
+  }
+
+  &.cta {
+    &::after {
+      content: ' \2192';
+    }
+  }
+}
+
+
+// Lists
+
+ul, ol, dl {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: disc inside;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+ul dl, ul ol, ul ul,
+ol dl, ol ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+// Blockquotes
+
+blockquote {
+  border-left: 4px solid $orange-500;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem 1.5rem; // 16px 24px
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  & *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+// Emphasis
+
+small {
+  font-size: .75rem; // 12px
+}
+
+
+// Dividers
+
+hr {
+  border: 0;
+  margin: 1rem 0; // 16px 0
+  border-top: 1px solid $grey-200;
+}
+
+
+//
+// Media queries
+//
+
+@media (min-width: 768px) {
+
+  // Headings
+
+  h1 {
+    font-size: 2.5rem; // 40px
+    line-height: 3rem; // 48px
+  }
+
+  h2 {
+    font-size: 2rem; // 32px
+    line-height: 2.5rem; // 40px
+  }
+
+  h3 {
+    font-size: 1.5rem; // 24px
+    line-height: 2rem; // 32px
+  }
+
+  h4 {
+    font-size: 1.25rem; // 20px
+    line-height: 1.75rem; // 28px
+  }
+
+  h5 {
+    font-size: 1rem; // 16px
+    line-height: 1.5rem; // 24px
+  }
+
+  h6 {
+    font-size: .875rem; // 14px
+    line-height: 1.25rem; // 20px
+  }
+
+  .display-1 {
+    font-size: 5rem; // 80px
+    line-height: 5.5rem; // 88px
+  }
+
+  .display-2 {
+    font-size: 4rem; // 64px
+    line-height: 4.5rem; // 72px
+  }
+
+  .display-3 {
+    font-size: 3rem; // 48px
+    line-height: 3.5rem; // 56px
+  } 
+}

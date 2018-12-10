@@ -1,0 +1,20 @@
+@import 'mixins';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 100%; // 100% = 16px = 1rem
+}
+
+body {
+  @include sans-serif;
+}
+
+img {
+  vertical-align: middle; // Remove unwanted space under images.
+}

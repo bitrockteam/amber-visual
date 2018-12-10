@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'mixins';
+
+// Code
+
+code, pre,
+kbd, samp {
+  @include monospace;
+}
+
+code {
+  background: $grey-50;
+  border-radius: .25rem; // 4px
+  padding: .125rem .25rem; // 2px 4px
+  white-space: nowrap;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  background: $grey-50;
+  display: block;
+  padding: 1rem 1.5rem; // 16px 24px
+  overflow-x: scroll;
+  
+  code {
+    background: transparent;
+    padding: 0;
+    white-space: pre;
+  }
+}

@@ -1,5 +1,4 @@
-
-import './index.scss';
+import './amber.scss';
 
 console.log('Project started...');
 
