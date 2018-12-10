@@ -1,7 +1,7 @@
 {
   "name": "@amber-ds/visual",
   "version": "0.6.0",
-  "main": "src/index.scss",
+  "main": "src/amber.scss",
   "displayName": "Amber Design System",
   "config": {
     "themeColor": "#EB6400"
@@ -13,7 +13,7 @@
   "repository": "git@github.com:bitrockteam/amber-visual.git",
   "author": "Alessandro Menini <alessandro.menini@bitrock.it>",
   "contributors": [
-    "Salvatore Laisa <salvatore.laisa@bitrock.it> (https://flaviocopes.com)"
+    "Salvatore Laisa <salvatore.laisa@bitrock.it>"
   ],
   "license": "MIT",
   "scripts": {

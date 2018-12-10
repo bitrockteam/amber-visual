@@ -26,7 +26,7 @@ const pages = PAGES.map(page => new HtmlWebpackPlugin({
 const entry = str => Object.assign({}, { [str]: `./src/${str}/index.scss` });
 const entries = PAGES
   .map(e => entry(e))
-  .concat([{ '/': './src/index.scss' }])
+  .concat([{ '/': './src/amber.scss' }])
   .reduce((prev, curr) => Object.assign(prev, curr));
 
 const getCSS = () => isProd() ? 
@@ -34,7 +34,7 @@ const getCSS = () => isProd() ?
 
 const CONFIG = {
   entry: isProd() ? entries : {
-    main: './src/index.js',
+    main: './src/index.js'
   },
   output: {
     path: path.join(__dirname, './dist'),
@@ -84,7 +84,7 @@ const CONFIG = {
         test: /\.css$/,
         use: [
           getCSS(), 
-          'css-loader'
+          'css-loader' 
         ]
       },
       {
