@@ -3,6 +3,9 @@
 # amber-visual
 Styleguide & visual assets for the Amber Design System.
 
+[![Build Status](https://travis-ci.org/bitrockteam/amber-visual.svg?branch=master)](https://travis-ci.org/bitrockteam/amber-visual) [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+![https://david-dm.org/bitrockteam/amber-visual.svg](https://david-dm.org/bitrockteam/amber-visual.svg)
+
 ## Usage 
 
 ### Install
@@ -46,17 +49,6 @@ Create a static build in the `./dist` folder
 ```bash
 $ yarn build
 ```
-
-<!-- Run the tests
-```bash
-$ yarn test
-```
-
-Run the build action and deploy to GitHub pages 
-```bash
-$ yarn deploy
-``` -->
-
 
 ### License
 Developed by Bitrock UI Engineering team, released under the [MIT license](LICENSE).
