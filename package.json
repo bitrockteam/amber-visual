@@ -1,6 +1,6 @@
 {
   "name": "@amber-ds/visual",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "main": "src/amber.scss",
   "displayName": "Amber Design System",
   "config": {
@@ -37,7 +37,7 @@
     "style-loader": "0.21.0",
     "webpack": "4.16.1",
     "webpack-cli": "3.0.8",
-    "webpack-dev-server": "3.1.9",
+    "webpack-dev-server": "3.1.14",
     "webpack-pwa-manifest": "3.6.2",
     "workbox-webpack-plugin": "3.4.1"
   },
