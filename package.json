@@ -1,6 +1,6 @@
 {
   "name": "@amber-ds/visual",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "main": "src/amber.scss",
   "displayName": "Amber Design System",
   "config": {
