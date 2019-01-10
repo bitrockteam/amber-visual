@@ -19,6 +19,12 @@
       padding: 1rem;
       background-color: #EBEBEB;
     }
+
+    @media (min-width: 768px) {
+      .grid-card-container {
+        padding: 2rem;
+      }
+}
    </style>
 
 </head>
@@ -27,38 +33,16 @@
   <h1><%= htmlWebpackPlugin.options.title %> / Visual / Grid</h1>
 
   <div class="container">
-    <header>
-      <h3>Max-width container</h3>
-    </header>
-    <article class="grid-card-container grid">
-      <div class="grid-card grid-1-1" style="background-color: #F5F5F5">
-        <span>Max-width container</span>
-      </div>
-    </article>
-  </div>
-
-  <div class="container-fluid">
-      <header>
-        <h3>Full-width container</h3>
-      </header>
-      <article class="grid-card-container grid">
-        <div class="grid-card grid-1-1" style="background-color: #F5F5F5">
-          <span>Full-width container</span>
-        </div>
-      </article>
-    </div>
-
-  <div class="container">
 
   <section class="">
     <header>
       <h3>Grid 1</h3>
     </header>
 
-    <article class="grid-card-container grid">
+    <article class="grid-card-container row">
 
-      <div class="grid-card grid-1-1" style="background-color: #F5F5F5">
-        <span>1/1</span>
+      <div class="grid-card col-12" style="background-color: #F5F5F5">
+        <span>.col-12</span>
       </div>
 
     </article>
@@ -70,14 +54,14 @@
       <h3>Grid 2</h3>
     </header>
 
-    <article class="grid-card-container grid">
+    <article class="grid-card-container row">
 
-      <div class="grid-card grid-1-2" style="background-color: #F5F5F5">
-        <span>1/2</span>
+      <div class="grid-card col-6" style="background-color: #F5F5F5">
+        <span>.col-6</span>
       </div>
 
-      <div class="grid-card grid-1-2" style="background-color: #F5F5F5">
-          <span>1/2</span>
+      <div class="grid-card col-6" style="background-color: #F5F5F5">
+        <span>.col-6</span>
       </div>
 
     </article>
@@ -89,18 +73,18 @@
       <h3>Grid 3</h3>
     </header>
 
-    <article class="grid-card-container grid">
+    <article class="grid-card-container row">
 
-      <div class="grid-card grid-1-3" style="background-color: #F5F5F5">
-        <span>1/3</span>
+      <div class="grid-card col-4" style="background-color: #F5F5F5">
+        <span>.col-4</span>
       </div>
 
-      <div class="grid-card grid-1-3" style="background-color: #F5F5F5">
-          <span>1/3</span>
+      <div class="grid-card col-4" style="background-color: #F5F5F5">
+        <span>.col-4</span>
       </div>
 
-      <div class="grid-card grid-1-3" style="background-color: #F5F5F5">
-          <span>1/3</span>
+      <div class="grid-card col-4" style="background-color: #F5F5F5">
+        <span>.col-4</span>
       </div>
   
     </article>
@@ -112,22 +96,22 @@
       <h3>Grid 4</h3>
     </header>
 
-    <article class="grid-card-container grid">
+    <article class="grid-card-container row">
 
-      <div class="grid-card grid-1-4" style="background-color: #F5F5F5">
-        <span>1/4</span>
+      <div class="grid-card col-3" style="background-color: #F5F5F5">
+        <span>.col-3</span>
       </div>
 
-      <div class="grid-card grid-1-4" style="background-color: #F5F5F5">
-          <span>1/4</span>
+      <div class="grid-card col-3" style="background-color: #F5F5F5">
+        <span>.col-3</span>
       </div>
 
-      <div class="grid-card grid-1-4" style="background-color: #F5F5F5">
-          <span>1/4</span>
+      <div class="grid-card col-3" style="background-color: #F5F5F5">
+        <span>.col-3</span>
       </div>
 
-      <div class="grid-card grid-1-4" style="background-color: #F5F5F5">
-        <span>1/4</span>
+      <div class="grid-card col-3" style="background-color: #F5F5F5">
+        <span>.col-3</span>
       </div>
     
     </article>
@@ -139,121 +123,30 @@
       <h3>Grid 6</h3>
     </header>
 
-    <article class="grid-card-container grid">
+    <article class="grid-card-container row">
 
-      <div class="grid-card grid-1-6" style="background-color: #F5F5F5">
-        <span>1/6</span>
+      <div class="grid-card col-2" style="background-color: #F5F5F5">
+        <span>.col-2</span>
       </div>
 
-      <div class="grid-card grid-1-6" style="background-color: #F5F5F5">
-          <span>1/6</span>
+      <div class="grid-card col-2" style="background-color: #F5F5F5">
+        <span>.col-2</span>
       </div>
 
-      <div class="grid-card grid-1-6" style="background-color: #F5F5F5">
-          <span>1/6</span>
+      <div class="grid-card col-2" style="background-color: #F5F5F5">
+        <span>.col-2</span>
       </div>
 
-      <div class="grid-card grid-1-6" style="background-color: #F5F5F5">
-        <span>1/6</span>
+      <div class="grid-card col-2" style="background-color: #F5F5F5">
+        <span>.col-2</span>
       </div>
 
-      <div class="grid-card grid-1-6" style="background-color: #F5F5F5">
-        <span>1/6</span>
+      <div class="grid-card col-2" style="background-color: #F5F5F5">
+        <span>.col-2</span>
       </div>
 
-      <div class="grid-card grid-1-6" style="background-color: #F5F5F5">
-        <span>1/6</span>
-      </div>
-  
-    </article>
-  
-  </section>
-
-  <section class="">
-    <header>
-      <h3>Grid</h3>
-    </header>
-
-    <article class="grid-card-container grid">
-
-      <div class="grid-card grid-1-1" style="background-color: #F5F5F5">
-        <span>1/1</span>
-      </div>
-  
-    </article>
-
-    <article class="grid-card-container grid">
-
-        <div class="grid-card grid-1-2" style="background-color: #F5F5F5">
-          <span>1/2</span>
-        </div>
-  
-        <div class="grid-card grid-1-2" style="background-color: #F5F5F5">
-            <span>1/2</span>
-        </div>
-  
-    </article>
-
-    <article class="grid-card-container grid">
-
-      <div class="grid-card grid-1-3" style="background-color: #F5F5F5">
-        <span>1/3</span>
-      </div>
-
-      <div class="grid-card grid-1-3" style="background-color: #F5F5F5">
-          <span>1/3</span>
-      </div>
-
-      <div class="grid-card grid-1-3" style="background-color: #F5F5F5">
-          <span>1/3</span>
-      </div>
-  
-    </article>
-
-    <article class="grid-card-container grid">
-
-        <div class="grid-card grid-1-4" style="background-color: #F5F5F5">
-          <span>1/4</span>
-        </div>
-  
-        <div class="grid-card grid-1-4" style="background-color: #F5F5F5">
-            <span>1/4</span>
-        </div>
-  
-        <div class="grid-card grid-1-4" style="background-color: #F5F5F5">
-            <span>1/4</span>
-        </div>
-  
-        <div class="grid-card grid-1-4" style="background-color: #F5F5F5">
-          <span>1/4</span>
-      </div>
-    
-    </article>
-
-    <article class="grid-card-container grid">
-
-      <div class="grid-card grid-1-6" style="background-color: #F5F5F5">
-        <span>1/6</span>
-      </div>
-
-      <div class="grid-card grid-1-6" style="background-color: #F5F5F5">
-          <span>1/6</span>
-      </div>
-
-      <div class="grid-card grid-1-6" style="background-color: #F5F5F5">
-        <span>1/6</span>
-      </div>
-
-      <div class="grid-card grid-1-6" style="background-color: #F5F5F5">
-        <span>1/6</span>
-      </div>
-
-      <div class="grid-card grid-1-6" style="background-color: #F5F5F5">
-        <span>1/6</span>
-      </div>
-
-      <div class="grid-card grid-1-6" style="background-color: #F5F5F5">
-        <span>1/6</span>
+      <div class="grid-card col-2" style="background-color: #F5F5F5">
+        <span>.col-2</span>
       </div>
   
     </article>
@@ -265,36 +158,117 @@
       <h3>Mixed grid</h3>
     </header>
 
-    <article class="grid-card-container grid">
+    <article class="grid-card-container row">
 
-      <div class="grid-card grid-1-2" style="background-color: #F5F5F5">
-        <span>1/2</span>
+      <div class="grid-card col-6" style="background-color: #F5F5F5">
+        <span>.col-6</span>
       </div>
 
-      <div class="grid-card grid-1-4" style="background-color: #F5F5F5">
-        <span>1/4</span>
+      <div class="grid-card col-3" style="background-color: #F5F5F5">
+        <span>.col-3</span>
       </div>
 
-      <div class="grid-card grid-1-4" style="background-color: #F5F5F5">
-        <span>1/4</span>
+      <div class="grid-card col-3" style="background-color: #F5F5F5">
+        <span>.col-3</span>
       </div>
 
-      <div class="grid-card grid-1-3" style="background-color: #F5F5F5">
-        <span>1/3</span>
+      <div class="grid-card col-4" style="background-color: #F5F5F5">
+        <span>.col-4</span>
       </div>
 
-      <div class="grid-card grid-1-6" style="background-color: #F5F5F5">
-        <span>1/6</span>
+      <div class="grid-card col-2" style="background-color: #F5F5F5">
+        <span>.col-2</span>
       </div>
 
-      <div class="grid-card grid-1-2" style="background-color: #F5F5F5">
-        <span>1/2</span>
+      <div class="grid-card col-6" style="background-color: #F5F5F5">
+        <span>.col-6</span>
       </div>
   
     </article>
   
   </section>
+
+  <section class="">
+    <header>
+      <h3>Grid Responsive</h3>
+    </header>
+
+    <article class="grid-card-container row">
+
+      <div class="grid-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-color: #F5F5F5">
+        <span>1</span>
+      </div>
+
+      <div class="grid-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-color: #F5F5F5">
+        <span>2</span>
+      </div>
+
+      <div class="grid-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-color: #F5F5F5">
+        <span>3</span>
+      </div>
+
+      <div class="grid-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-color: #F5F5F5">
+        <span>4</span>
+      </div>
+
+      <div class="grid-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-color: #F5F5F5">
+        <span>5</span>
+      </div>
+
+      <div class="grid-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-color: #F5F5F5">
+        <span>6</span>
+      </div>
+
+      <div class="grid-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-color: #F5F5F5">
+        <span>7</span>
+      </div>
+
+      <div class="grid-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-color: #F5F5F5">
+        <span>8</span>
+      </div>
+
+      <div class="grid-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-color: #F5F5F5">
+        <span>9</span>
+      </div>
+
+      <div class="grid-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-color: #F5F5F5">
+        <span>10</span>
+      </div>
+
+      <div class="grid-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-color: #F5F5F5">
+        <span>11</span>
+      </div>
+
+      <div class="grid-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" style="background-color: #F5F5F5">
+        <span>12</span>
+      </div>
+
+    </article>
+
+  </section>
   
+  </div>
+
+  <div class="container">
+    <header>
+      <h3>Max-width container</h3>
+    </header>
+    <article class="grid-card-container row">
+      <div class="grid-card col-12" style="background-color: #F5F5F5">
+        <span>Max-width container</span>
+      </div>
+    </article>
+  </div>
+
+  <div class="container-fluid">
+    <header>
+      <h3>Full-width container</h3>
+    </header>
+    <article class="grid-card-container row">
+      <div class="grid-card col-12" style="background-color: #F5F5F5">
+        <span>Full-width container</span>
+      </div>
+    </article>
   </div>
 
 </body>

@@ -32,9 +32,9 @@ input[type='text'],
 input[type='url'],
 textarea,
 select {
-  // -webkit-appearance: none;
-  // -moz-appearance: none;
-  // appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: transparent;
   border: 1px solid $grey;
   border-radius: 0;
