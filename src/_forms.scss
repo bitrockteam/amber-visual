@@ -1,0 +1,130 @@
+@import 'variables';
+@import 'mixins';
+
+// Input
+
+fieldset, input,
+select, textarea {
+  @include sans-serif;
+}
+
+label, legend {
+  display: block;
+  margin-bottom: .25rem;
+
+  &+span {
+    font-size: .75rem; // 12px
+    line-height: 1.25rem; // 16px
+
+    color: $grey-dark;
+    display: block;
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+  }
+}
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 1px solid $grey;
+  border-radius: 0;
+  box-shadow: none;
+  display: inline-block;
+  height: 2.5em;
+  min-width: 20rem;
+  max-width: 100%;
+  padding: .5rem 1rem;
+  transition: background .2s ease-in, border-color .2s ease-in, box-shadow .2s ease-in, opacity .2s ease-in;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+  }
+
+  &:invalid {
+    background: $error-50;
+    border-color: $error-700;
+    box-shadow: inset 0 -1px 0 0 $error-700;
+  }
+
+  &+span.error {
+    font-size: .75rem; // 12px
+    line-height: 1.25rem; // 16px = 12px + 8px = 0.75rem + 0.5rem
+
+    color: $grey-dark;
+    display: block;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &:invalid+span.error {
+    color: $error-700;
+    opacity: 1;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: -.75rem;
+  }
+
+  &::placeholder {
+    color: $grey;
+  }
+
+}
+
+textarea {
+  min-height: 7rem;
+  vertical-align: top;
+}
+
+input[type='email']:hover:not([disabled]),
+input[type='number']:hover:not([disabled]),
+input[type='password']:hover:not([disabled]),
+input[type='search']:hover:not([disabled]),
+input[type='tel']:hover:not([disabled]),
+input[type='text']:hover:not([disabled]),
+input[type='url']:hover:not([disabled]),
+textarea:hover:not([disabled]),
+select:hover:not([disabled]) {
+  border-color: $grey-dark;
+
+  &:invalid {
+    border-color: $error-700;
+  }
+}
+
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='text']:focus,
+input[type='url']:focus,
+textarea:focus,
+select:focus {
+  border-color: $grey-dark;
+  box-shadow: inset 0 -1px 0 0 $grey-dark;
+  outline: 0;
+
+  &:invalid {
+    border-color: $error-700;
+    box-shadow: inset 0 -1px 0 0 $error-700;
+  }
+
+  &:invalid+span.error {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: -0.75rem;
+  }
+}

@@ -33,3 +33,17 @@ pre {
 table {
   margin-bottom: 1rem; // 16px
 }
+
+// Forms
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea,
+select {
+  margin-bottom: 1rem; // 16px
+}
