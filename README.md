@@ -1,10 +1,8 @@
-> ## 🛠 Status: In Development
-
 # amber-visual
 Styleguide & visual assets for the Amber Design System.
 
-[![Build Status](https://travis-ci.org/bitrockteam/amber-visual.svg?branch=master)](https://travis-ci.org/bitrockteam/amber-visual) [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-![https://david-dm.org/bitrockteam/amber-visual.svg](https://david-dm.org/bitrockteam/amber-visual.svg)
+[![Build Status](https://travis-ci.org/bitrockteam/amber-visual.svg?branch=master)](https://travis-ci.org/bitrockteam/amber-visual) 
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)![https://david-dm.org/bitrockteam/amber-visual.svg](https://david-dm.org/bitrockteam/amber-visual.svg)
 
 ## Usage 
 
@@ -36,8 +34,20 @@ Importing source `.scss` within a `.js` file with Webpack:
 import '@amber-ds/visual';
 ```
 
-
 ## Development
+
+### Getting started
+Clone the repo
+```bash
+$ git clone git@github.com:bitrockteam/amber-visual.git && cd amber-visual
+```
+
+Install dependencies
+```bash
+$ yarn
+--- or ---
+$ npm install
+```
 
 ### Available NPM tasks
 Start the project in development mode (live reload)
@@ -50,5 +60,8 @@ Create a static build in the `./dist` folder
 $ yarn build
 ```
 
-### License
+## How to contribute
+Please refer to our [contributing](./contributing.md) document.
+
+## License
 Developed by Bitrock UI Engineering team, released under the [MIT license](LICENSE).
