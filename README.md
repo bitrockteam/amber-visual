@@ -1,6 +1,6 @@
 # amber-visual
 [![Build Status](https://travis-ci.org/bitrockteam/amber-visual.svg?branch=master)](https://travis-ci.org/bitrockteam/amber-visual) 
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)![https://david-dm.org/bitrockteam/amber-visual.svg](https://david-dm.org/bitrockteam/amber-visual.svg)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) ![https://david-dm.org/bitrockteam/amber-visual.svg](https://david-dm.org/bitrockteam/amber-visual.svg)
 
 Styleguide & visual assets for the Amber Design System.
 
