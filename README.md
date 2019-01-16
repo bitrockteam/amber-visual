@@ -1,8 +1,12 @@
 # amber-visual
-Styleguide & visual assets for the Amber Design System.
-
 [![Build Status](https://travis-ci.org/bitrockteam/amber-visual.svg?branch=master)](https://travis-ci.org/bitrockteam/amber-visual) 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)![https://david-dm.org/bitrockteam/amber-visual.svg](https://david-dm.org/bitrockteam/amber-visual.svg)
+
+Styleguide & visual assets for the Amber Design System.
+
+![logo.svg](logo.svg)
+
+This repository is aimed mainly to developers and contributors, for the proper documentation & styleguide please refer to [https://amber.bitrock.it](https://amber.bitrock.it).
 
 ## Usage 
 

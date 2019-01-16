@@ -1,6 +1,6 @@
 {
   "name": "@amber-ds/visual",
-  "version": "0.6.3",
+  "version": "1.0.0",
   "main": "src/amber.scss",
   "displayName": "Amber Design System",
   "config": {
@@ -42,7 +42,7 @@
     "workbox-webpack-plugin": "3.4.1"
   },
   "dependencies": {
-    "normalize.css": "bitrockteam/normalize.css"
+    "normalize.css": "8.0.1"
   },
   "ava": {
     "require": [
