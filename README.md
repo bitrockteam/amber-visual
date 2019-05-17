@@ -67,5 +67,12 @@ $ yarn build
 ## How to contribute
 Please refer to our [contributing](./contributing.md) document.
 
+## Publish a new version
+Before attempting to publish a new version of the package on NPM, first run through this checklist:
+
+* tests passes (it is required for PRs)
+* increment version number in `package.json` file following [semver](https://semver.org/) guidelines
+* report the changes on the [amber-website](https://github.com/bitrockteam/amber-website) docs
+
 ## License
 Developed by Bitrock UI Engineering team, released under the [MIT license](LICENSE).
